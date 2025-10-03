@@ -5,7 +5,7 @@
 set -o vi
 
 # Change to home directory
-cd ~
+# cd ~
 
 
 # If not running interactively, don't do anything
