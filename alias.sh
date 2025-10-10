@@ -4,8 +4,8 @@ alias ls="ls -l"
 
 
 # Docker
-dexec() {
-    docker exec -it "$1" "${@:2:-/bin/bash}"
+dex() {
+    docker exec -it "$1" "${@:2:-//bin//bash}"
 }
 dcup() {
     docker compose up "$@"
