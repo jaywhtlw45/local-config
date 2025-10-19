@@ -7,14 +7,29 @@ bashrc_dest="$HOME/.bashrc"
 # Files that need to be sourced
 base_path="$repo_path/bashrc/base.sh"
 alias_path="$repo_path/bashrc/alias.sh"
+
 source_files=("$base_path" "$alias_path")
 
 # Additional Config
 glazewm_source="$repo_path/.glzr"
 glazewm_dest="$HOME/"
 
-# Print Statements. Set to "true" to print
+# Set to "true" to print
 verbose="true"
+
+# Start ssh-agent on Windows Laptop
+if [[ "$(hostname)" == "DESKTOP-MMKQQS8" ]]; then
+  # Start SSH agent if not running
+  echo "Starting ssh-agent"
+  if [ -z "$SSH_AUTH_SOCK" ] || ! ssh-add -l &>/dev/null; then
+    eval "$(ssh-agent -s)" >/dev/null
+    ssh-add /c/users/jay/.ssh/github 2>/dev/null
+  fi
+
+  if [[ -d "$glazewm_source" ]]; then
+    cp -r "$glazewm_source" "$glazewm_dest"
+  fi
+fi
 
 if [[ -d "$repo_path" ]]; then
   echo "Updating repo at $repo_path..."
