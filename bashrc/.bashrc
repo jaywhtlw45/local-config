@@ -1,43 +1,54 @@
-# Source my custom bashrc from repo
-REPO_PATH="$HOME/local-config/"
+# .bashrc
+repo_path="$HOME/local-config"
 
-if [[ -d "$REPO_PATH" ]]; then
-  # Attempt to pull latest changes
-  # echo "Updating repo at $REPO_PATH..."
-  git -C "$REPO_PATH" pull
+bashrc_src="$repo_path/bashrc/.bashrc"
+bashrc_dest="$HOME/.bashrc"
 
-  # Source the bashrc if it exists
-  BASHRC_PATH="$REPO_PATH/base.sh"
-  if [[ -f "$BASHRC_PATH" ]]; then
-    source "$BASHRC_PATH"
-    # echo "Sourced base from $BASHRC_PATH"
-  else
-    echo "Could not source base"
-  fi
+# Files that need to be sourced
+base_path="$repo_path/bashrc/base.sh"
+alias_path="$repo_path/bashrc/alias.sh"
+source_files=("$base_path" "$alias_path")
 
-  ALIAS_PATH="$REPO_PATH/alias.sh"
-  if [[ -f "$ALIAS_PATH" ]]; then
-    source "$ALIAS_PATH"
-    # echo "Sourced alias from $ALIAS_PATH"
-  else
-    echo "Could not source alias"
-  fi
+# Additional Config
+glazewm_source="$repo_path/.glzr"
+glazewm_dest="$HOME/"
+
+# Print Statements. Set to "true" to print
+verbose="true"
+
+if [[ -d "$repo_path" ]]; then
+  echo "Updating repo at $repo_path..."
+  git -C "$repo_path" pull
+
+  # TODO If bashrc is new copy it over. There could be an infinite loop here??
+  # Consider environment var count to prevent infinite loop
+  [[ "$verbose" == "true" ]] && echo "Copying bashrc from $bashrc_src to $bashrc_dest"
+  cp "$bashrc_src" "$bashrc_dest"
+
+  # Source Files
+  for file in "${source_files[@]}"; do
+    if [[ -f $file ]]; then
+      [[ "$verbose" == "true" ]] && echo "Sourcing $file"
+      source $file
+    else
+      echo "Could not source $file"
+    fi
+  done
 
 else
-  echo "Repository not found at $REPO_PATH"
+  echo "Repository not found at $repo_path"
 fi
 
 # Start ssh-agent on Windows Laptop
 if [[ "$(hostname)" == "DESKTOP-MMKQQS8" ]]; then
   # Start SSH agent if not running
+  echo "Starting ssh-agent"
   if [ -z "$SSH_AUTH_SOCK" ] || ! ssh-add -l &>/dev/null; then
     eval "$(ssh-agent -s)" >/dev/null
     ssh-add /c/users/jay/.ssh/github 2>/dev/null
   fi
 
-  GLAZEWM_SOURCE="$REPO_PATH/.glzr"
-  GLAZEWM_DEST="$HOME/"
-  if [[ -d "$GLAZEWM_SOURCE" ]]; then
-    cp -r "$GLAZEWM_SOURCE" "$GLAZEWM_DEST"
+  if [[ -d "$glazewm_source" ]]; then
+    cp -r "$glazewm_source" "$glazewm_dest"
   fi
 fi
