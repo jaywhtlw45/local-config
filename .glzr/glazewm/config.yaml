@@ -25,7 +25,6 @@ general:
   # Whether to switch back and forth between the previously focused
   # workspace when focusing the current workspace.
   toggle_workspace_on_refocus: false
-
   cursor_jump:
     # Whether to automatically move the cursor on the specified trigger.
     enabled: true
@@ -127,6 +126,53 @@ window_behavior:
 
       # Whether to show fullscreen windows as always on top.
       shown_on_top: false
+
+# workspaces:
+#   - name: "1"
+#     bind_to_monitor: 0
+#     display_name: "1A"
+#   - name: "2"
+#     bind_to_monitor: 0
+#     display_name: "2A"
+#   - name: "3"
+#     bind_to_monitor: 0
+#     display_name: "3A"
+#   - name: "4"
+#     bind_to_monitor: 0
+#     display_name: "4A"
+#   - name: "5"
+#     bind_to_monitor: 0
+#     display_name: "5A"
+#   - name: "6"
+#     bind_to_monitor: 1
+#     display_name: "1A"
+#   - name: "7"
+#     bind_to_monitor: 1
+#     display_name: "2B"
+#   - name: "8"
+#     bind_to_monitor: 1
+#     display_name: "3B"
+#   - name: "9"
+#     bind_to_monitor: 1
+#     display_name: "4B"
+#   - name: "10"
+#     bind_to_monitor: 1
+#     display_name: "5B"
+#   - name: "11"
+#     bind_to_monitor: 2
+#     display_name: "1C"
+#   - name: "12"
+#     bind_to_monitor: 2
+#     display_name: "2C"
+#   - name: "13"
+#     bind_to_monitor: 2
+#     display_name: "3C"
+#   - name: "14"
+#     bind_to_monitor: 2
+#     display_name: "4C"
+#   - name: "15"
+#     bind_to_monitor: 2
+#     display_name: "5C"
 
 workspaces:
   - name: "1"
@@ -325,15 +371,15 @@ keybindings:
     bindings: ["alt+r"]
   - commands: ["focus --workspace 5"]
     bindings: ["alt+t"]
-  - commands: ["focus --workspace 6"]
+  - commands: ["focus --workspace 1", "focus --workspace 6", "focus --workspace 11"]
     bindings: ["alt+a"]
-  - commands: ["focus --workspace 7"]
+  - commands: ["focus --workspace 2", "focus --workspace 7", "focus --workspace 12"]
     bindings: ["alt+s"]
-  - commands: ["focus --workspace 8"]
+  - commands: ["focus --workspace 3", "focus --workspace 8", "focus --workspace 13"]
     bindings: ["alt+d"]
-  - commands: ["focus --workspace 9"]
+  - commands: ["focus --workspace 4", "focus --workspace 9", "focus --workspace 14"]
     bindings: ["alt+f"]
-  - commands: ["focus --workspace 10; focus --workspace 5; focus workspace 15"]
+  - commands: ["focus --workspace 5", "focus --workspace 10", "focus --workspace 15"]
     bindings: ["alt+g"]
   - commands: ["focus --workspace 11"]
     bindings: ["alt+z"]
