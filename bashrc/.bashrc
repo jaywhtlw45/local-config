@@ -1,10 +1,10 @@
 # Source my custom bashrc from repo
-REPO_PATH="$HOME/local-config/bashrc/"
+REPO_PATH="$HOME/local-config/"
 
 if [[ -d "$REPO_PATH" ]]; then
   # Attempt to pull latest changes
   # echo "Updating repo at $REPO_PATH..."
-  (cd "$REPO_PATH" && git pull --quiet 2>/dev/null)
+  git -C "$REPO_PATH" pull
 
   # Source the bashrc if it exists
   BASHRC_PATH="$REPO_PATH/base.sh"
@@ -33,5 +33,11 @@ if [[ "$(hostname)" == "DESKTOP-MMKQQS8" ]]; then
   if [ -z "$SSH_AUTH_SOCK" ] || ! ssh-add -l &>/dev/null; then
     eval "$(ssh-agent -s)" >/dev/null
     ssh-add /c/users/jay/.ssh/github 2>/dev/null
+  fi
+
+  GLAZEWM_SOURCE="$REPO_PATH/.glzr"
+  GLAZEWM_DEST="$HOME/"
+  if [[ -d "$GLAZEWM_SOURCE" ]]; then
+    cp -r "$GLAZEWM_SOURCE" "$GLAZEWM_DEST"
   fi
 fi
