@@ -16,9 +16,9 @@ fi
 
 # -----------------------------------------------------
 # Host Files
-hostnames=(
-  "DESKTOP-MMKQQS8"
-)
+hostnames=()
+if [[ "$HOSTNAME" == "DESKTOP-MMKQQS8"]] && hostnames+=("DESKTOP-MMKQQS8")
+
 
 for hostname in "${hostnames[@]}"; do
   host_file="$REPO_CONFIG_PATH/bashrc/$hostname.sh"
