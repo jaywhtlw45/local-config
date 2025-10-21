@@ -1,6 +1,6 @@
 alias ll="ls -la"
 alias ls="ls -l"
-alias vim="nvim"
+alias cl="clear"
 
 # Docker
 dex() {

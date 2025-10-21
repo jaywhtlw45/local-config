@@ -20,6 +20,9 @@ hostnames=()
 if [[ "$HOSTNAME" == "DESKTOP-MMKQQS8" ]]; then
   hostnames+=("DESKTOP-MMKQQS8")
 fi
+if [[ "$HOSTNAME" == "Dev-1" ]]; then
+  hostnames+=("Dev-1")
+fi
 
 for hostname in "${hostnames[@]}"; do
   host_file="$REPO_CONFIG_PATH/bashrc/$hostname.sh"
@@ -30,6 +33,7 @@ for hostname in "${hostnames[@]}"; do
     echo "❌ Could not find $host_file"
   fi
 done
+
 
 # -----------------------------------------------------
 git -C $REPO_CONFIG_PATH pull
