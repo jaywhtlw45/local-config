@@ -1,0 +1,55 @@
+[2m2025-06-22T22:48:43.947791Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zebar'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-06-22T22:50:51.186850Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zebar'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-06-28T00:25:46.713354Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-06-29T03:13:46.146774Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:46.218128Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.513563Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.514592Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.555115Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.556656Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.600702Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.602558Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.603757Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.604181Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-06-29T03:13:47.604763Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-07-01T03:13:04.336766Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-07-05T01:10:20.225481Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-08-09T01:43:08.567736Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 136 column 5
+[2m2025-08-09T01:43:30.575074Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 136 column 5
+[2m2025-08-09T01:46:17.828133Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 137 column 5
+[2m2025-08-09T01:48:27.667736Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules: invalid type: map, expected a sequence at line 138 column 5
+[2m2025-08-09T01:49:35.972260Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 137 column 5
+[2m2025-08-09T01:49:41.585527Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 137 column 5
+[2m2025-08-09T01:50:25.287331Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unexpected argument found
+ at line 137 column 15
+[2m2025-08-09T01:50:32.493422Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unexpected argument found
+ at line 137 column 15
+[2m2025-08-09T01:53:06.957713Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unexpected argument found
+ at line 138 column 15
+[2m2025-08-09T01:53:46.589193Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unexpected argument found
+ at line 137 column 15
+[2m2025-08-14T02:23:49.443061Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-08-15T02:06:25.436072Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-08-16T02:08:05.095402Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[21].commands: unrecognized subcommand
+ at line 267 column 15
+[2m2025-08-16T04:59:35.028905Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-08-16T05:16:27.195741Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 6 column 5, while parsing a block mapping at line 5 column 3
+[2m2025-08-16T05:16:35.231213Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 6 column 5, while parsing a block mapping at line 5 column 3
+[2m2025-08-16T05:17:23.418395Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 6 column 5, while parsing a block mapping at line 5 column 3
+[2m2025-08-16T05:20:40.433646Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unrecognized subcommand
+ at line 6 column 5
+[2m2025-08-16T05:23:53.194173Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: unrecognized subcommand
+ at line 6 column 5
+[2m2025-08-16T17:30:00.351063Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-08-16T17:30:00.465842Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-08-16T17:30:00.468725Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-08-19T03:00:58.586494Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-08-22T04:25:39.023250Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-08-26T02:17:49.872931Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-09-27T03:53:10.858186Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-10-15T04:51:22.942474Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-10-15T04:51:23.168437Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed

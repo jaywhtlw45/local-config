@@ -1,0 +1,31 @@
+alt + 1 : most recent
+alt + 2 : prev
+alt + 3 : next
+alt + 4 : close
+alt + 5 
+alt + 6
+alt + 7 : Toggle Tiling
+alt + 8 : Toggle FUll screen
+alt + 9 : resize mode 
+alt + 0 : Toggle tiling .dir
+
+alt + shift + 2 : redraw windows
+alt + shift + 3 : reload config
+alt + shift + 4 : kill glazewm
+
+alt + shift + y : move workspace left
+alt + shift + u : move workspace down
+alt + shift + i : move workspace up
+alt + shift + o : move workspace right
+
+
+
+
+
+
+
+
+
+
+
+
