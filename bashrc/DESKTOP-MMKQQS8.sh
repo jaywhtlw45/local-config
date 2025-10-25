@@ -10,8 +10,10 @@ fi
 glazewm_dest="$HOME/"
 
 if [[ "$MACHINE_TYPE" == "laptop" ]]; then
-  glazewm_src="$REPO_CONFIG_PATH/glazewm_alternatives/laptop/.glzr"
+  [[ "$BASHRC_VERBOSE" ]] && echo "Choosing laptop .glzr config"
+  glazewm_src="$REPO_CONFIG_PATH/glazewm_alt/laptop/.glzr"
 else
+  [[ "$BASHRC_VERBOSE" ]] && echo "Choosing desktop .glzr config"
   glazewm_src="$REPO_CONFIG_PATH/.glzr"
 fi
 
