@@ -371,7 +371,7 @@ keybindings:
     bindings: ["alt+r"]
   - commands: ["focus --workspace 5"]
     bindings: ["alt+t"]
-  - commands: ["focus --workspace 1", "focus --workspace 11", "focus --workspace 6]
+  - commands: ["focus --workspace 1", "focus --workspace 11", "focus --workspace 6"]
     bindings: ["alt+a"]
   - commands: ["focus --workspace 2", "focus --workspace 12", "focus --workspace 7"]
     bindings: ["alt+s"]
