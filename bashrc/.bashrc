@@ -23,6 +23,9 @@ fi
 if [[ "$HOSTNAME" == "Dev-1" ]]; then
   hostnames+=("Dev-1")
 fi
+if [[ "$HOSTNAME" == "357mag" ]]; then
+  hostnames+=("357mag")
+fi
 
 for hostname in "${hostnames[@]}"; do
   host_file="$REPO_CONFIG_PATH/bashrc/$hostname.sh"

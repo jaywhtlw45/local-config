@@ -4,8 +4,6 @@ general:
   # Example: The below command launches Zebar.
   startup_commands:
     - "shell-exec zebar"
-    - "focus --workspace 3"
-    - "shell-exec chrome"
     # - "move --workspace 6"
     # - "shell-exec chrome"
     # - "move --workspace 9"
