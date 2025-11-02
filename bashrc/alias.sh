@@ -4,7 +4,7 @@ alias cl="clear"
 
 # Docker
 dex() {
-  docker exec -it "$1"
+  docker exec -it "$@"
 }
 dcup() {
   docker compose up "$@"
