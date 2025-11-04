@@ -418,7 +418,7 @@ keybindings:
     bindings: ["alt+shift+s"]
   - commands: ["move --workspace 8", "focus --workspace 3", "focus --workspace 13", "focus --workspace 8"]
     bindings: ["alt+shift+d"]
-  - commands: ["move --workspace 9", "focus --workspace 4", "focus --workdspace 14", "focus --workspace 9"]
+  - commands: ["move --workspace 9", "focus --workspace 4", "focus --workspace 14", "focus --workspace 9"]
     bindings: ["alt+shift+f"]
   - commands: ["move --workspace 10", "focus --workspace 5", "focus --workspace 15", "focus --workspace 10"]
     bindings: ["alt+shift+g"]
