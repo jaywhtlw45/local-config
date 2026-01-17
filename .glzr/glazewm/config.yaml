@@ -49,14 +49,14 @@ gaps:
   scale_with_dpi: true
 
   # Gap between adjacent windows.
-  inner_gap: "10px"
+  inner_gap: "5px"
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: "45px"
-    right: "5px"
-    bottom: "5px"
-    left: "5px"
+    top: "40px"
+    right: "0px"
+    bottom: "0px"
+    left: "0px"
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -324,7 +324,7 @@ keybindings:
 
   # Minimize focused window.
   - commands: ["toggle-minimized"]
-    bindings: ["alt+m"]
+    bindings: ["alt+w"]
 
   # Close focused window.
   # - commands: ["close"]
@@ -359,36 +359,46 @@ keybindings:
     bindings: ["alt+1"]
 
   # Change focus to a workspace defined in `workspaces` config.
-  - commands: ["focus --workspace 1"]
-    bindings: ["alt+q"]
-  - commands: ["focus --workspace 2"]
-    bindings: ["alt+w"]
-  - commands: ["focus --workspace 3"]
-    bindings: ["alt+e"]
-  - commands: ["focus --workspace 4"]
-    bindings: ["alt+r"]
-  - commands: ["focus --workspace 5"]
-    bindings: ["alt+t"]
-  - commands: ["focus --workspace 1", "focus --workspace 11", "focus --workspace 6"]
+  # - commands: ["focus --workspace 1"]
+  #   bindings: ["alt+q"]
+  # - commands: ["focus --workspace 2"]
+  #   bindings: ["alt+w"]
+  # - commands: ["focus --workspace 3"]
+  #   bindings: ["alt+e"]
+  # - commands: ["focus --workspace 4"]
+  #   bindings: ["alt+r"]
+  # - commands: ["focus --workspace 5"]
+  #   bindings: ["alt+t"]
+  - commands: ["focus --workspace 6"]
     bindings: ["alt+a"]
-  - commands: ["focus --workspace 2", "focus --workspace 12", "focus --workspace 7"]
+  - commands: ["focus --workspace 7"]
     bindings: ["alt+s"]
-  - commands: ["focus --workspace 3", "focus --workspace 13", "focus --workspace 8"]
+  - commands: ["focus --workspace 8"]
     bindings: ["alt+d"]
-  - commands: ["focus --workspace 4", "focus --workspace 14", "focus --workspace 9"]
+  - commands: ["focus --workspace 9"]
     bindings: ["alt+f"]
-  - commands: ["focus --workspace 5", "focus --workspace 15", "focus --workspace 10"]
+  - commands: ["focus --workspace 10"]
     bindings: ["alt+g"]
-  - commands: ["focus --workspace 11"]
+  - commands: ["focus --workspace 1"]
     bindings: ["alt+z"]
-  - commands: ["focus --workspace 12"]
+  - commands: ["focus --workspace 2"]
     bindings: ["alt+x"]
-  - commands: ["focus --workspace 13"]
+  - commands: ["focus --workspace 3"]
     bindings: ["alt+c"]
-  - commands: ["focus --workspace 14"]
+  - commands: ["focus --workspace 4"]
     bindings: ["alt+v"]
-  - commands: ["focus --workspace 15"]
+  - commands: ["focus --workspace 5"]
     bindings: ["alt+b"]
+  - commands: ["focus --workspace 11"]
+    bindings: ["alt+n"]
+  - commands: ["focus --workspace 12"]
+    bindings: ["alt+m"]
+  - commands: ["focus --workspace 13"]
+    bindings: ["alt+,"]
+  - commands: ["focus --workspace 14"]
+    bindings: ["alt+."]
+  - commands: ["focus --workspace 15"]
+    bindings: ["alt+/"]
 
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
@@ -402,33 +412,44 @@ keybindings:
     bindings: ["alt+shift+o"]
 
   # Move focused window to a workspace defined in `workspaces` config.
-  - commands: ["move --workspace 1", "focus --workspace 1"]
-    bindings: ["alt+shift+q"]
-  - commands: ["move --workspace 2", "focus --workspace 2"]
-    bindings: ["alt+shift+w"]
-  - commands: ["move --workspace 3", "focus --workspace 3"]
-    bindings: ["alt+shift+e"]
-  - commands: ["move --workspace 4", "focus --workspace 4"]
-    bindings: ["alt+shift+r"]
-  - commands: ["move --workspace 5", "focus --workspace 5"]
-    bindings: ["alt+shift+t"]
-  - commands: ["move --workspace 6", "focus --workspace 1", "focus --workspace 11", "focus --workspace 6"]
+  # - commands: ["move --workspace 1", "focus --workspace 1"]
+  #   bindings: ["alt+shift+q"]
+  # - commands: ["move --workspace 2", "focus --workspace 2"]
+  #   bindings: ["alt+shift+w"]
+  # - commands: ["move --workspace 3", "focus --workspace 3"]
+  #   bindings: ["alt+shift+e"]
+  # - commands: ["move --workspace 4", "focus --workspace 4"]
+  #   bindings: ["alt+shift+r"]
+  # - commands: ["move --workspace 5", "focus --workspace 5"]
+  #   bindings: ["alt+shift+t"]
+  - commands: ["move --workspace 6", "focus --workspace 6"]
     bindings: ["alt+shift+a"]
-  - commands: ["move --workspace 7", "focus --workspace 2", "focus --workspace 12", "focus --workspace 7"]  
+  - commands: ["move --workspace 7", "focus --workspace 7"]  
     bindings: ["alt+shift+s"]
-  - commands: ["move --workspace 8", "focus --workspace 3", "focus --workspace 13", "focus --workspace 8"]
+  - commands: ["move --workspace 8", "focus --workspace 8"]
     bindings: ["alt+shift+d"]
-  - commands: ["move --workspace 9", "focus --workspace 4", "focus --workspace 14", "focus --workspace 9"]
+  - commands: ["move --workspace 9", "focus --workspace 9"]
     bindings: ["alt+shift+f"]
-  - commands: ["move --workspace 10", "focus --workspace 5", "focus --workspace 15", "focus --workspace 10"]
+  - commands: ["move --workspace 10", "focus --workspace 10"]
     bindings: ["alt+shift+g"]
-  - commands: ["move --workspace 11", "focus --workspace 11"]
+  - commands: ["move --workspace 1", "focus --workspace 1"]
     bindings: ["alt+shift+z"]
-  - commands: ["move --workspace 12", "focus --workspace 12"]
+  - commands: ["move --workspace 2", "focus --workspace 2"]
     bindings: ["alt+shift+x"]
-  - commands: ["move --workspace 13", "focus --workspace 13"]
+  - commands: ["move --workspace 3", "focus --workspace 3"]
     bindings: ["alt+shift+c"]
-  - commands: ["move --workspace 14", "focus --workspace 14"]
+  - commands: ["move --workspace 4", "focus --workspace 4"]
     bindings: ["alt+shift+v"]
-  - commands: ["move --workspace 15", "focus --workspace 15"]
+  - commands: ["move --workspace 5", "focus --workspace 5"]
     bindings: ["alt+shift+b"]
+
+  - commands: ["move --workspace 11", "focus --workspace 11"]
+    bindings: ["alt+shift+n"]
+  - commands: ["move --workspace 12", "focus --workspace 12"]
+    bindings: ["alt+shift+m"]
+  - commands: ["move --workspace 13", "focus --workspace 13"]
+    bindings: ["alt+shift+,"]
+  - commands: ["move --workspace 14", "focus --workspace 14"]
+    bindings: ["alt+shift+."]
+  - commands: ["move --workspace 15", "focus --workspace 15"]
+    bindings: ["alt+shift+/"]
